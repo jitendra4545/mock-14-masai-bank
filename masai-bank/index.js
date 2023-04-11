@@ -100,16 +100,12 @@ app.post(`/login`,async(req,res)=>{
          }else{
             let token = jwt.sign({ foo: 'bar' }, 'jitendra');
             res.send(token)
-            
          }
             });
         }else{
             res.send(`user data not found`)
         }
-        
-
-        
-       res.send(findData)
+      
     }catch(err){
         console.log(err)
     }
