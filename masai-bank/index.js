@@ -100,7 +100,7 @@ app.post(`/login`,async(req,res)=>{
          }else{
             let token = jwt.sign({ foo: 'bar' }, 'jitendra');
             res.send(token)
-            localStorage.setItem("token",(token))
+            
          }
             });
         }else{
